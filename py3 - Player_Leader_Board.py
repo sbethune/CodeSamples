@@ -41,4 +41,7 @@ if __name__ == '__main__':
 
     # Generate random list of game wins
     g = np.random.randint(low=1, high=10, size=100)
-    count_wins(g, 5)
+    res = count_wins(g, 5)
+
+    # END
+    
