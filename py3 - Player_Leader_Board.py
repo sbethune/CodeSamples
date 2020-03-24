@@ -43,5 +43,5 @@ if __name__ == '__main__':
     g = np.random.randint(low=1, high=10, size=100)
     res = count_wins(g, 5)
 
-    # END
+# END
     
