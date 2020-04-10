@@ -1,0 +1,10 @@
+# uname -a: Linux kernel < 5.0
+
+# 1 - Update grub kernel flags
+sudo vi /etc/default/grub
+GRUB_CMDLINE_LINUX_DEFAULT="noresume noibrs noibpb nopti nospectre_v2 nospectre_v1 l1tf=off nospec_store_bypass_disable no_stf_barrier mds=off mitigations=off"
+
+# Apply Changes
+sudo update-grub
+sudo grub-install /dev/sdxxxxxxx
+
